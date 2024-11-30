@@ -1,0 +1,134 @@
+.calculator {
+  width: 300px;
+  margin: 50px auto;
+  padding: 15px;
+  border-radius: 10px;
+  background: #393939;
+  box-shadow: 20px 15px 20px rgba(0, 0, 0, 0.1);
+}
+h1{
+  color: orange;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+.calculator-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+  margin-bottom: 20px;
+  /* border: 1px solid #ccc; */
+  padding: 10px;
+  background: #272727;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.input {
+  text-align: right;
+  color: #ffffff;
+  p{
+    font-size: 20px;
+  }
+}
+
+.result {
+  text-align: right;
+  color: #ffffff;
+  p{
+    font-size: 20px;
+  }
+}
+
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.numbers-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  button {
+    padding: 18px 25px;
+    font-size: 28px;
+    border: none;
+    border-radius: 5px;
+    background: orange;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    &:hover {
+      background: #ffffff;
+      color: orange;
+    }
+    &.active{
+      background: #ffffff;
+      color: orange;
+    }
+  }
+}
+.operators-buttons {
+  display: grid;
+  gap: 10px;
+  button {
+    padding: 18px 25px;
+    font-size: 28px;
+    border: none;
+    border-radius: 5px;
+    background: #ffffff;
+    color: gray;
+    cursor: pointer;
+    width: 100%;
+    &:hover {
+      background: gray;
+      color: #ffffff;
+    }
+    &.active{
+      background: gray;
+      color: orange;
+    }
+  }
+}
+/* .clear-equal-button{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  width: 100%;
+  button {
+    padding: 18px 25px;
+    font-size: 28px;
+    border: none;
+    border-radius: 5px;
+    background: #ffffff;
+    color: gray;
+    cursor: pointer;
+    width: 100%;
+    &:hover {
+      background: gray;
+      color: #ffffff;
+    }
+    &.active{
+      background: gray;
+      color: orange;
+    }
+  }
+} */
+button {
+  padding: 18px 25px;
+  font-size: 28px;
+  border: none;
+  border-radius: 5px;
+  background: #ffffff;
+  color: gray;
+  cursor: pointer;
+  width: 100%;
+  &:hover {
+    background: gray;
+    color: #ffffff;
+  }
+  &.active{
+    background: gray;
+    color: orange;
+  }
+}
